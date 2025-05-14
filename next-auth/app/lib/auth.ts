@@ -49,7 +49,10 @@ export const NEXT_AUTH = {
             session.user.id = token.sub
         }
         return session
-    }
+    },
+    async redirect({ }) {
+      return '/role'; 
+    },
   },
   // pages: {
   //   signIn: "/signin"
